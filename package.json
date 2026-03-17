@@ -2,9 +2,12 @@
   "name": "playwright-mcp-server",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx @playwright/mcp@latest --port $PORT --host 0.0.0.0 --transport sse"
+    "start": "npx @playwright/mcp@latest --port $PORT --host 0.0.0.0 --transport sse --headless"
   },
   "dependencies": {
     "@playwright/mcp": "latest"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
